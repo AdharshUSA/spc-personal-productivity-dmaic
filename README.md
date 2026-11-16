@@ -33,6 +33,30 @@ The report covers Define, Measure and Analyze in depth, and lays out Improve and
 | Pareto analysis | Which items drive most of the defects | Fairly flat distribution: the top four items together made up 43.8% of occurrences |
 | Weekly trend analysis | Temporal patterns | Weekly totals of 51, 43, 33, 50, 43, 39 and 33: peaks in weeks 1 and 4, lowest in weeks 3 and 7 |
 
+## Figures
+
+Charts from the project report.
+
+**Frequency of each flagged item**
+
+![Item frequency](images/fig1_item_frequency.png)
+
+**Pareto chart**
+
+![Pareto chart of flagged items](images/fig2_pareto_chart.png)
+
+**p-chart: daily proportion flagged**
+
+![p-chart](images/fig3_p_chart.png)
+
+**c-chart: daily count flagged**
+
+![c-chart](images/fig4_c_chart.png)
+
+**Weekly trend**
+
+![Weekly trend](images/fig5_weekly_trend.png)
+
 ## Findings
 
 1. The process is statistically stable, so the variation is common-cause (built into the system), not driven by special events. Improvement needs a change to the system, not a hunt for one-off causes.
