@@ -2,13 +2,27 @@
 
 Individual project for **IE 530 Quality Control** (Purdue, April 2026). A seven-week study that applies the DMAIC framework and standard SPC tools to a self-collected dataset, treating day-to-day routine as a process whose variation can be measured.
 
-The report covers Define, Measure and Analyze in depth, and lays out Improve and Control as a plan. The subject matter is personal, so this README describes the method and results only.
+The report covers Define, Measure and Analyze in depth, and lays out Improve and Control as a plan. The recorded data is in [`data/daily_observations.csv`](data/daily_observations.csv).
 
 ## Data
 
 - 10 binary daily self-assessments (0 = issue absent, 1 = issue present), recorded each evening
 - 49 consecutive days, giving 490 observations in total
 - 292 defect events recorded, a mean of 5.96 per day (p-bar = 0.596)
+- File layout: one row per item (1 to 10), one column per day (d1 to d49)
+
+| Item | Behavior tracked | Days flagged (of 49) |
+|---|---|---|
+| 1 | Workload balance | 25 |
+| 2 | Tech distraction | 30 |
+| 3 | Irregular sleep | 31 |
+| 4 | Procrastination | 29 |
+| 5 | Skipping exercise | 33 |
+| 6 | Social media | 29 |
+| 7 | Disorganized space | 22 |
+| 8 | Inconsistent routines | 29 |
+| 9 | Overthinking | 33 |
+| 10 | Exam stress | 31 |
 
 ## Methods
 
@@ -17,7 +31,7 @@ The report covers Define, Measure and Analyze in depth, and lays out Improve and
 | p-chart | Daily proportion of items flagged | Every day inside the limits, so no special-cause variation. UCL = 1.061, which exceeds 1.0 because p-bar is high and the subgroup size is only 10 |
 | c-chart | Daily count of flagged items | UCL = 13.28; daily counts ranged from 3 to 9, all in control |
 | Pareto analysis | Which items drive most of the defects | Fairly flat distribution: the top four items together made up 43.8% of occurrences |
-| Weekly trend analysis | Temporal patterns | Peaks in weeks 1 and 4, lowest in weeks 3 and 7 |
+| Weekly trend analysis | Temporal patterns | Weekly totals of 51, 43, 33, 50, 43, 39 and 33: peaks in weeks 1 and 4, lowest in weeks 3 and 7 |
 
 ## Findings
 
